@@ -1,16 +1,21 @@
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  }
+
 #container {
-  height: 600px;
-  width: 600px;
+  height: 640px;
+  width: 640px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -300px;
-  margin-top: -300px;
+  margin-left: -320px;
+  margin-top: -320px;
+  background-color: white;
 }
 
 .square {
-  border: solid black 1px;
-  height: auto;
-  width: auto;
+  height: 40px;
+  width: 40px;
   float: left;
 }
