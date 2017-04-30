@@ -4,32 +4,9 @@
 		<title> Sketch </title>
 	</head>
 <body>
-	<div id="container">
-  	</div>
+	<button type="button">clear</button>
+	<div id="container"></div>
 </body>
 </html>
 
-var scale = 16
-
-$(document).ready(function() {
-
-	$('#clear').click(function() {
-  		scale = prompt("Enter a number between 1 and 64")
-  })
-	
-	var size = (640/scale)
-
-    for(var x = 0; x < scale; x++) {
-        for(var y = 0; y < scale; y++) {
-            var square = $("<div class='square'></div>")
-            square.height(size); square.width(size);
-            square.appendTo('#container');
-            (square).hover(function() {
-            	$(this).css("background-color", "grey");
-            }, function(){
-            	$(this).css("background-color", "black");
-            })
-        }
-    }
-});
        
