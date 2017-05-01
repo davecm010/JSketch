@@ -26,10 +26,8 @@ function check_value(x) {
 
 function make_grid(input) {
 	i = check_value(input)
-	for (var x = 0; x < i; x++) {
-		for (var y = 0; y < i; y++) {
-			(make_square(i)).appendTo('#container');
-    }
+	for (var x = 0; x < i*i; x++) {
+    (make_square(i)).appendTo('#container');
   }
 }
 

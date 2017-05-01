@@ -13,8 +13,8 @@ body {
 h1 {
   color: #ed9090;
   text-shadow: 3px 3px #7b8596;
-  font-size: 300%;
-  letter-spacing: 5px;
+  font-size: 400%;
+  letter-spacing: 15px;
   margin-bottom: 10px;
 }
 
@@ -33,11 +33,12 @@ button {
   padding-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  height: 800px;
+  height: 850px;
   width: 800px;
   background-color: #d85656;
   border-radius: 40px;
 }
+
 
 #container {
   margin-left: auto;
@@ -48,11 +49,11 @@ button {
 }
 
 .wheel {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   border-radius: 100px;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .left {
