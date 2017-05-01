@@ -36,10 +36,18 @@ function make_square(dimension) {
 	var square = $("<div class='square'></div>");
 	square.height(size);
 	square.width(size);
-	(square).hover(function() {
-		$(this).css("background-color", "grey");
-	}, function() {
-		$(this).css("background-color", "black");
-      });
+  $(document).mousedown(function() {
+     (square).bind('mouseover',function(){
+         $(this).css({background:"black"});
+     });
+ })
+ .mouseup(function() {
+   (square).unbind('mouseover');
+ });
+
+ (square).mousedown(function() {
+   (square).css({background:"black"});
+ });
+
 	return square;
 }
