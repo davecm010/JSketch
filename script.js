@@ -13,7 +13,8 @@ $(document).ready(function() {
 
 function check_value(x) {
   if (isNaN(x)) {
-	  alert("The value entered is not a number");
+	  alert("The value entered is not a number. Default dimensions set");
+    return 16
   } else if (x < 1) {
 	  return 1;
   } else if (x > 64) {
@@ -27,7 +28,7 @@ function make_grid(input) {
 	i = check_value(input)
 	for (var x = 0; x < i; x++) {
 		for (var y = 0; y < i; y++) {
-			(make_square(i)).appendTo('#container'); 
+			(make_square(i)).appendTo('#container');
     }
   }
 }

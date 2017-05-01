@@ -6,6 +6,8 @@ body {
 
 #content {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -27,12 +29,40 @@ button {
   outline-color: #ed9090;
 }
 
+#etch_sketch {
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  width: 800px;
+  background-color: #d85656;
+  border-radius: 40px;
+}
+
 #container {
   margin-left: auto;
   margin-right: auto;
   height: 640px;
   width: 640px;
   background-color: #bab9a1;
+}
+
+.wheel {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+  margin-left: 50px;
+}
+
+.right {
+  float: right;
+  margin-right: 50px;
 }
 
 .square {
