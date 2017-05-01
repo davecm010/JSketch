@@ -29,3 +29,7 @@ button {
   width: 640px;
   background-color: white;
 }
+
+.square {
+  float: left;
+}
