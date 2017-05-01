@@ -25,8 +25,8 @@ function check_value(x) {
 
 function make_grid(input) {
 	i = check_value(input)
-  for (var x = 0; x < i; x++) {
-    for (var y = 0; y < i; y++) {
+	for (var x = 0; x < i; x++) {
+		for (var y = 0; y < i; y++) {
 			(make_square(i)).appendTo('#container'); 
     }
   }
@@ -34,13 +34,13 @@ function make_grid(input) {
 
 function make_square(dimension) {
 	var size = (640/dimension);
-  var square = $("<div class='square'></div>");
-  square.height(size);
-  square.width(size);
-  (square).hover(function() {
-        $(this).css("background-color", "grey");
-      }, function() {
-        $(this).css("background-color", "black");
-      })
-  return square;
+	var square = $("<div class='square'></div>");
+	square.height(size);
+	square.width(size);
+	(square).hover(function() {
+		$(this).css("background-color", "grey");
+	}, function() {
+		$(this).css("background-color", "black");
+      });
+	return square;
 }
