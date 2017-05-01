@@ -7,15 +7,15 @@ $(document).ready(function() {
   $('button').click(function() {
     dim = prompt("Change Dimensions", "Enter a number between 1-64");
     $('.square').remove();
-    make_grid(dim)
+    make_grid(dim);
   })
 });
 
 function check_value(x) {
   if (isNaN(x)) {
-    alert("The value entered is not a number");
+	  alert("The value entered is not a number");
   } else if (x < 1) {
-    return 1;
+	  return 1;
   } else if (x > 64) {
   	return 64;
   } else {
