@@ -7,13 +7,13 @@ $(document).ready(function() {
   $('button').click(function() {
     dim = prompt("Change Dimensions", "Enter a number between 1-64");
     $('.square').remove();
-    make_grid(check_value(dim))
+    make_grid(dim)
   })
 });
 
 function check_value(x) {
   if (isNaN(x)) {
-    alert("This is not a number");
+    alert("The value entered is not a number");
   } else if (x < 1) {
     return 1;
   } else if (x > 64) {
@@ -23,19 +23,24 @@ function check_value(x) {
   }
 }
 
-function make_grid(dim) {
-  for (var x = 0; x < dim; x++) {
-    for (var y = 0; y < dim; y++) {
-      var size = (640 / dim);
-      var square = $("<div class='square'></div>");
-      square.height(size);
-      square.width(size);
-      square.appendTo('#container');
-      (square).hover(function() {
+function make_grid(input) {
+	i = check_value(input)
+  for (var x = 0; x < i; x++) {
+    for (var y = 0; y < i; y++) {
+			(make_square(i)).appendTo('#container'); 
+    }
+  }
+}
+
+function make_square(dimension) {
+	var size = (640/dimension);
+  var square = $("<div class='square'></div>");
+  square.height(size);
+  square.width(size);
+  (square).hover(function() {
         $(this).css("background-color", "grey");
       }, function() {
         $(this).css("background-color", "black");
       })
-    }
-  }
+  return square;
 }
