@@ -13,11 +13,12 @@ $(document).ready(function() {
 
 function check_value(x) {
   if (isNaN(x)) {
-	  alert("The value entered is not a number. Default dimensions set");
+	  alert("The value entered is not a number. Default dimensions set.");
     return 16
   } else if (x < 1) {
 	  return 1;
   } else if (x > 64) {
+	  alert("The value entered is too large. 64 x 64 pixels set.");
   	return 64;
   } else {
   	return x;
